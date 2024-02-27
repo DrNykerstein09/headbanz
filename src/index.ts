@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Player } from "./Class/Player.js";
 import inquirer from "inquirer";
 // import colors from "colors";

@@ -1,11 +1,14 @@
 {
-  "name": "ts-headbanz",
+  "name": "headbanz-temas-selectos",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "cli para jugar headbanz ",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
   "type": "module",
   "scripts": {
-     "dev": "ts-node-devnodemon -I --exec node --experimental-specifier-resolution=node  --loader ts-node/esm ./src/index.ts"
+    "prepare": "npm run build",
+    "dev": "ts-node-devnodemon -I --exec node --experimental-specifier-resolution=node  --loader ts-node/esm ./src/index.ts",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
